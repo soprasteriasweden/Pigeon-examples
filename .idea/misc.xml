@@ -4,7 +4,7 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/../Pigeon/webdriver-reference/pom.xml" />
+        <option value="$PROJECT_DIR$/../automated-testing-core/webdriver-reference/pom.xml" />
       </list>
     </option>
   </component>
