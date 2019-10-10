@@ -8,7 +8,6 @@
     <artifactId>pigeon-examples</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
     <repositories>
         <repository>
             <id>soprasteria-pigeon-releases</id>
@@ -57,6 +56,7 @@
             </extension>
         </extensions>
     </build>
+
     <dependencies>
         <dependency>
             <groupId>se.soprasteria</groupId>
@@ -64,5 +64,4 @@
             <version>1.0.1</version>
         </dependency>
     </dependencies>
-
 </project>
