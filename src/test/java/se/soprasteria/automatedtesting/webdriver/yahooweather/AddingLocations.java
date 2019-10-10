@@ -15,17 +15,15 @@ public class AddingLocations extends YahooBaseTest {
 
 
     @Test(timeOut = 180000, dataProvider = "getDriver", groups = {"smoke", "yahoo", "android", "ios", "browser"})
-    public void openSearchLocationPageByClickingAddLocationButton(AutomationDriver driver) throws InterruptedException {
+    public void openSearchLocationPageByClickingAddLocationButton(AutomationDriver driver) {
         logger.info("Starting test that verifies we can open the page/editbox that adds a location correctly ");
-        initPages(driver);
         mainPage.gotoAddLocation();
         Assert.assertTrue(addLocation.isPageLoaded(), "Expected add/search location page to be loaded, it wasn't");
         logger.info("Test passed - add/search location page was successfully opened");
     }
 
     @Test(timeOut = 180000, dataProvider = "getDriver", groups = {"smoke", "yahoo", "android", "ios", "browser"})
-    public void closeSearchLocationPageByClickingClearButton(AutomationDriver driver) throws InterruptedException {
-        initPages(driver);
+    public void closeSearchLocationPageByClickingClearButton(AutomationDriver driver) {
         logger.info("Testing that we can open the page which you add a location and verifies that it closes correctly.");
         mainPage.gotoAddLocation();
         Assert.assertTrue(addLocation.isPageLoaded(),
@@ -38,7 +36,6 @@ public class AddingLocations extends YahooBaseTest {
 
     @Test(timeOut = 180000, dataProvider = "getDriver", groups = {"smoke", "yahoo", "android", "browser"})
     public void addValidLocation(AutomationDriver driver) throws InterruptedException {
-        initPages(driver);
         logger.info("Testing if we can add correct locations and verify that they get added properly.");
         for (String expectedLocation: VALID_LOCATIONS) {
             mainPage.gotoAddLocation();
@@ -52,7 +49,6 @@ public class AddingLocations extends YahooBaseTest {
 
     @Test(timeOut = 180000, dataProvider = "getDriver", groups = {"smoke", "yahoo", "android", "browser"})
     public void addInvalidLocations(AutomationDriver driver) {
-        initPages(driver);
         logger.info("Testing to add invalid locations and verifies that they cannot be added.");
         for (String location: INVALID_LOCATIONS) {
             mainPage.gotoAddLocation();
