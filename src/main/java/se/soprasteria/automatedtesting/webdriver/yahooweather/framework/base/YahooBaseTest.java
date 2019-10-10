@@ -25,7 +25,7 @@ public class YahooBaseTest extends BaseTestCase {
 
     @Override
     protected String getDriverConfigId() {
-        return "android";
+        return "chromedriver";
     }
 
     @Override
@@ -38,14 +38,12 @@ public class YahooBaseTest extends BaseTestCase {
     protected void initializeDriver(AutomationDriver driver) {
         if (driver.isAndroid()) {
             initYahooAndroid(driver);
-        }else if (driver.isWeb()){
+        } else if (driver.isWeb()) {
             initYahooWeb(driver);
-        } else if (driver.isIos()){
+        } else if (driver.isIos()) {
             initYahooWebIos(driver);
         }
     }
-
-
 
 
     private void initYahooAndroid(AutomationDriver driver) {
@@ -74,14 +72,14 @@ public class YahooBaseTest extends BaseTestCase {
         logger.info("We should now have passed the welcome sequence and be inside the app");
     }
 
-    private void initYahooWeb(AutomationDriver driver){
+    private void initYahooWeb(AutomationDriver driver) {
         driver.manage().window().maximize();
         driver.navigate().to("https://www.yahoo.com/news/weather/");
         pressAgreeGDPRButton(driver);
         logger.info("We should now be navigating to the yahoo webpage");
     }
 
-    private void initYahooWebIos(AutomationDriver driver){
+    private void initYahooWebIos(AutomationDriver driver) {
         driver.navigate().to("https://www.yahoo.com/news/weather/");
         pressAgreeGDPRButton(driver);
         logger.info("We should now have navigating to the yahoo webpage, sleeping for 5s to allow it to initialise");
