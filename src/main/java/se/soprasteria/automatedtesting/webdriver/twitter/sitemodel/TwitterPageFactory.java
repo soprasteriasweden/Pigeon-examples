@@ -15,9 +15,11 @@ public class TwitterPageFactory {
     public static LoginPage getLoginPage(AutomationDriver driver) {
         if (driver.isWeb()) {
             return new LoginPageWeb(driver);
-        } else if (driver.isAndroid()) {
+        }
+        if (driver.isAndroid()) {
             //return Android login page
-        } else if (driver.isIos()) {
+        }
+        if (driver.isIos()) {
             //return iOS login page
         }
         throw new RuntimeException(getInvalidDriverError(driver));
@@ -26,9 +28,11 @@ public class TwitterPageFactory {
     public static MainPage getMainPage(AutomationDriver driver) {
         if (driver.isWeb()) {
             return new MainPageWeb(driver);
-        } else if (driver.isAndroid()) {
+        }
+        if (driver.isAndroid()) {
             //return Android main page
-        } else if (driver.isIos()) {
+        }
+        if (driver.isIos()) {
             //return iOS main page
         }
         throw new RuntimeException(getInvalidDriverError(driver));
