@@ -33,7 +33,7 @@
             <capability name="version" value="" />
         </driver>
         <!-- sample chromedriver configuration -->
-        <driver id="chromedriver" type="ChromeDriver" version="73.0.3"/>
+        <driver id="chromedriver" type="ChromeDriver" version="76"/>
         <!-- sample internetexplorerdriver configuration -->
         <driver id="internetexplorerdriver" type="InternetExplorerDriver" />
         <!-- sample marionettedriver configuration -->
