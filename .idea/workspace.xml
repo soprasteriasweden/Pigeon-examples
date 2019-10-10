@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0288cafa-6409-4f5c-80ff-526eb9ce5781" name="Default Changelist" comment="Updated twitter test to function properly">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/soprasteria/automatedtesting/webdriver/twitter/framework/base/TwitterBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/soprasteria/automatedtesting/webdriver/twitter/framework/base/TwitterBaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/soprasteria/automatedtesting/webdriver/twitter/sitemodel/TwitterPageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/soprasteria/automatedtesting/webdriver/twitter/sitemodel/TwitterPageFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/soprasteria/automatedtesting/webdriver/twitter/sitemodel/pages/loginpage/LoginPageWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/soprasteria/automatedtesting/webdriver/twitter/sitemodel/pages/loginpage/LoginPageWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/soprasteria/automatedtesting/webdriver/twitter/sitemodel/pages/mainpage/MainPageWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/soprasteria/automatedtesting/webdriver/twitter/sitemodel/pages/mainpage/MainPageWeb.java" afterDir="false" />
+    <list default="true" id="0288cafa-6409-4f5c-80ff-526eb9ce5781" name="Default Changelist" comment="Updated pom.xml file">
       <change beforePath="$PROJECT_DIR$/src/main/java/se/soprasteria/automatedtesting/webdriver/yahooweather/framework/base/YahooBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/soprasteria/automatedtesting/webdriver/yahooweather/framework/base/YahooBaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/se/soprasteria/automatedtesting/webdriver/twitter/PerformLoginAndWriteTweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/soprasteria/automatedtesting/webdriver/twitter/PerformLoginAndWriteTweet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/twitter/twitter_config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/twitter/twitter_config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/se/soprasteria/automatedtesting/webdriver/yahooweather/AddingLocations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/soprasteria/automatedtesting/webdriver/yahooweather/AddingLocations.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -141,8 +132,21 @@
       <option name="presentableId" value="Default" />
       <updated>1555331260268</updated>
       <workItem from="1570704654394" duration="247000" />
-      <workItem from="1570704949700" duration="5830000" />
+      <workItem from="1570704949700" duration="6164000" />
     </task>
+    <task id="LOCAL−00001" summary="Updated twitter test to function properly">
+      <created>1570710804738</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1570710804738</updated>
+    </task>
+    <task id="LOCAL−00002" summary="Updated pom.xml file">
+      <created>1570710931627</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1570710931627</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,18 +165,9 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/se/soprasteria/automatedtesting/webdriver/yahooweather/AddingLocations.java</url>
-          <line>17</line>
-          <properties class="se.soprasteria.automatedtesting.webdriver.yahooweather.AddingLocations" method="openSearchLocationPageByClickingAddLocationButton">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated twitter test to function properly" />
+    <MESSAGE value="Updated pom.xml file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated pom.xml file" />
   </component>
 </project>

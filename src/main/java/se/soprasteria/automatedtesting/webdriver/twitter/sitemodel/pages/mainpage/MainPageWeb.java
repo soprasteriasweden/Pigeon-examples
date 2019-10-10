@@ -8,7 +8,6 @@ import se.soprasteria.automatedtesting.webdriver.helpers.driver.AutomationDriver
 
 public class MainPageWeb extends BasePageObject implements MainPage {
 
-
     @FindBy(css = ".notranslate.public-DraftEditor-content") // from css: .notranslate.public-DraftEditor-content
     protected WebElement tweetBox;
     @FindBy(xpath = "//*[@id=\"react-root\"]/div/div/div/main/div/div/div/div[1]/div/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div/div/div[2]/div[3]")
@@ -16,8 +15,7 @@ public class MainPageWeb extends BasePageObject implements MainPage {
     @FindBy(xpath = "//*[@id=\"react-root\"]/div/div/div/main/div/div/div/div[1]/div/div[4]/div/div/section/div/div/div/div[1]/div/article/div/div[2]")
     protected WebElement newTweet;
 
-
-    public MainPageWeb (AutomationDriver driver) {
+    public MainPageWeb(AutomationDriver driver) {
         super(driver);
     }
 
@@ -28,8 +26,8 @@ public class MainPageWeb extends BasePageObject implements MainPage {
         sleep(1000);    //Wait 1000ms for tweet to get posted
     }
 
-    public boolean checkIfTweetHasBeenMade(String message){
-        if(elementHelper.isTextPresentInElementWithinTime(newTweet, message, 4000)) {
+    public boolean checkIfTweetHasBeenMade(String message) {
+        if (elementHelper.isTextPresentInElementWithinTime(newTweet, message, 4000)) {
             logger.info("The text inside of the new tweet box is = " + newTweet.getText() + "... just like its supposed to be");
             return true;
         }

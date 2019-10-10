@@ -16,17 +16,17 @@ public class LoginPageWeb extends BasePageObject implements LoginPage {
     @FindBy(css = ".js-password-field") // used from classname: js-password-field
     protected WebElement passwordTextbox;
 
-
     public LoginPageWeb (AutomationDriver driver) {
         super(driver);
-        defaultWebpageElementLocator(driver);
     }
+
 
     @Override
     public boolean isPageLoaded() {
         logger.info("Verifying that the loginpage is visible");
         return elementHelper.isElementDisplayedWithinTime(loginButton, 5000);
     }
+
 
     public void performLogin(User user){
         elementHelper.sendKeysWithControlledSpeed(usernameTextbox, user.username, 0);

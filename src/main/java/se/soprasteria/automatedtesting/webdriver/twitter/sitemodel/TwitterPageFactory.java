@@ -12,7 +12,7 @@ import se.soprasteria.automatedtesting.webdriver.twitter.sitemodel.pages.mainpag
 
 public class TwitterPageFactory {
 
-    public static LoginPage getLoginPage (AutomationDriver driver) {
+    public static LoginPage getLoginPage(AutomationDriver driver) {
         if (driver.isWeb()) {
             return new LoginPageWeb(driver);
         } else if (driver.isAndroid()) {
@@ -23,7 +23,7 @@ public class TwitterPageFactory {
         throw new RuntimeException(getInvalidDriverError(driver));
     }
 
-    public static MainPage getMainPage (AutomationDriver driver) {
+    public static MainPage getMainPage(AutomationDriver driver) {
         if (driver.isWeb()) {
             return new MainPageWeb(driver);
         } else if (driver.isAndroid()) {
