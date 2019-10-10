@@ -8,15 +8,15 @@ import se.soprasteria.automatedtesting.webdriver.helpers.driver.AutomationDriver
 
 
 public class MainPageWeb extends BasePageObject implements MainPage  {
-    @FindBy(xpath = "//button[contains(.,'Change location')]")
+    @FindBy(xpath = "//*[@id=\"Lead-1-WeatherLocationAndTemperature\"]/div/section[1]/div[2]/div/button")
     protected WebElement buttonChangeLocation;
-    @FindBy(xpath = "//div[contains(@class,'location')]/h1[contains(@class, 'city')]")
+    @FindBy(xpath = "//*[@id=\"Lead-1-WeatherLocationAndTemperature\"]/div/section[1]/div[1]/div/h1")
     protected WebElement currentLocationHeader;
     @FindBy(id = "uh-signedin")
     protected WebElement signInButton;
-    @FindBy(css = "[data-reactid='447']")
+    @FindBy(css = "[data-reactid='457']")
     protected WebElement windIndicator;
-    @FindBy(css = "div#Lead-1-WeatherLocationAndTemperature > div > section > div:nth-of-type(3) > span")
+    @FindBy(xpath = "//*[@id=\"Lead-1-WeatherLocationAndTemperature\"]/div/section[1]/div[3]/span")
     protected WebElement currentTime;
 
     private final int POLL_MILLIS = 500;
