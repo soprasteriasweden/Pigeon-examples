@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
 
+    <!-- Properties -->
+    <properties>
+        <property name="url_mainpage" value="https://twitter.com/login"/>
+        <property name="config.video.record" value="true"/>
+    </properties>
+
     <!-- Users -->
     <users>
-        <user id="exampleUser" pin="" role="user" username="@PigeonUser" password="pigeon@twitter" />
+        <user id="exampleUser" pin="" role="user" username="@PigeonUser" password="pigeon@twitter"/>
     </users>
 
     <!-- Drivers -->
     <drivers>
-        <driver id="chromedriver" type="ChromeDriver" version="73.0.3"/>
+        <driver id="chromedriver" type="ChromeDriver" version="76"/>
     </drivers>
     
 </config>

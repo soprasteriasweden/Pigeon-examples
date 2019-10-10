@@ -24,14 +24,15 @@ public class YahooBaseTest extends BaseTestCase {
     }
 
     @Override
-    protected String getDefaultDriverConfig() {
+    protected String getDriverConfigId() {
         return "android";
     }
 
     @Override
-    protected String getDefaultPropertyFile() {
+    protected String getConfigFile() {
         return "yahoo/yahoo_config.xml";
     }
+
 
     @Override
     protected void initializeDriver(AutomationDriver driver) {
@@ -43,6 +44,9 @@ public class YahooBaseTest extends BaseTestCase {
             initYahooWebIos(driver);
         }
     }
+
+
+
 
     private void initYahooAndroid(AutomationDriver driver) {
         logger.info("Initializing the test by closing down permission popups and daily notifications");
